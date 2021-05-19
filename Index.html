@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pypepro</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!--Materialize Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize CSS-->
+    <link rel="stylesheet" href="./vendors/css/materialize.min.css">
+    <!--Theme CSS File-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Media CSS File-->
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+<body>
+    <!--Main Section Start-->
+    <main>
+        <div class="row">
+                <div class="sidebar">
+                    <div class="logo_content">
+                        <div class="logo">
+                            <img src="./assets/img/logo.png" class="responsive-img" alt="pypepro">
+                            <div class="logo_name">Pypepro</div>
+                        </div>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">home</i>
+                                <span class="link_name">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">chat</i>
+                                <span class="link_name">Inbox</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">monetization_on</i>
+                                <span class="link_name">Deals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">date_range</i>
+                                <span class="link_name">Calender</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">group</i>
+                                <span class="link_name">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">volume_up</i>
+                                <span class="link_name">Marketing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">zoom_in</i>
+                                <span class="link_name">Find New Leads</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">flash_on</i>
+                                <span class="link_name">Triggers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">pie_chart</i>
+                                <span class="link_name">Reporting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">settings</i>
+                                <span class="link_name">Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">play_circle_filled</i>
+                                <span class="link_name">Training</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">person</i>
+                                <span class="link_name">Accounts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons" id="toggleBtn">sort</i>
+                        </li>
+                    </ul>
+            </div>
+            <div class="home_content">
+                    <div class="text">Home Content</div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!--Main Section End-->
+    
+
+    <!--JS File-->
+    <script src="./vendors/js/materialize.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        const toggleBtn=document.getElementById("toggleBtn");
+        const sidebar=document.querySelector(".sidebar")
+
+        toggleBtn.onclick=()=>{
+            sidebar.classList.toggle("active")
+        }
+    </script>
+
+
+</body>
+</html>
