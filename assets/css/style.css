@@ -28,6 +28,9 @@ body{
 .sidebar.active{
     width:78px;
 }
+.sidebar .logo_content {
+    margin-top: 12px;
+}
 .sidebar .logo_content .logo{
     color: #fff;
     display: flex;
