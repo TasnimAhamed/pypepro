@@ -152,9 +152,10 @@ body{
 .list-inline-item{
     display:inline-block
 }
-.list-inline-item:not(:last-child){
+.nav_content .list-inline-item:not(:last-child){
     margin-right:22px;
 }
+
 .nav_content ul{
     display:flex;
     align-items: center;
@@ -164,7 +165,7 @@ body{
     background: #E5E8EF;
     box-shadow: inset -4px -4px 2px #FFFFFF, inset 4px 4px 2px rgba(8, 20, 36, 0.1);
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 75px!important;
 }
 .nav_content ul li .call,
 .nav_content ul li .add,
@@ -203,7 +204,7 @@ body{
 .nav_content ul li input{
     border-bottom:0!important;
     width:300px!important;
-    height:40px!important;
+    height:38px!important;
     padding: 2px 15px!important;
     margin: 0px!important;
 }
@@ -247,6 +248,211 @@ body{
     transform: rotate(90deg);
 }
 .nav_content ul li:last-child{
-    margin-left: 25px;
+    margin-left: 40px;
 }
 /*Top Nav End*/
+
+/*Main Content*/
+.main_content{
+    margin: 35px 30px;
+    min-width: 1602px;    ;
+    height: 100%;
+    background:#fff;
+    border-radius:12px;
+    padding: 20px;
+}
+
+/*Deal Content Start*/
+.deal_content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E8EF;
+    padding-bottom: 15px;
+}
+.deal_content p{
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+}
+.deal_content ul{
+    display: flex;
+    align-items: center;
+}
+.deal_content ul .list-inline-item:not(:last-child){
+    margin-right:4px;
+}
+.deal_content ul li:first-child,
+.deal_content ul li:nth-child(2),
+.deal_content ul li:nth-child(3),
+.deal_content ul li:nth-child(4){
+    width:56px;
+    height:56px;
+    background: #F6F7FB;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}
+.deal_content ul li:first-child a i,
+.deal_content ul li:nth-child(2) a i,
+.deal_content ul li:nth-child(3) a i,
+.deal_content ul li:nth-child(4) a i{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #546376;
+}
+.deal_content ul li.gradient{
+    background: #133159;
+    color:#fff;
+}
+.deal_content ul li.gradient a i{
+    color:#fff;
+}
+.deal_content ul li.createBtn,
+.deal_content ul li.settingBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:0px 20px;
+    
+}    
+.deal_content ul li.createBtn a,
+.deal_content ul li.settingBtn a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #3C7EF3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height:24px;
+}
+.deal_content ul li.createBtn a i,
+.deal_content ul li.settingBtn a i{
+    background: #fff;
+    border-radius: 50%;
+    color: #3C7EF3;
+    text-align: center;
+    padding: 5px;
+    margin-right: 8px!important;
+}
+.deal_content ul li.eye{
+    margin-left: 15px;
+}
+
+.deal_content ul li.eye a{
+    display: flex;
+    color: #546376;
+    border:1px solid #546376;
+    border-radius: 50%;
+    padding:15px;
+    font-size: 15px;
+}
+
+/*Deal Content End*/
+
+/*Deal Detail Start*/
+select{
+    display:block;
+}
+.deal_detail{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0px;
+    border-bottom: 1px solid #E5E8EF;
+    align-items:center;
+}
+.deal_detail_left ul li:first-child select,
+.deal_detail_left ul li:nth-child(2) select,
+.deal_detail_left ul li:nth-child(3) input{
+    border: 1px solid #546376;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height:42px;
+    padding:0px 12px;
+    margin-right: 15px;
+}
+.deal_detail_left ul li:first-child select{
+    width: 300px !important;
+}
+.deal_detail_left ul{
+    display: flex;
+    position: relative;
+}
+.deal_detail_left ul li:nth-child(2) select{
+    width: 125px !important;
+}
+.deal_detail_left ul li:nth-child(3) input{
+    width:72px;
+    margin-bottom: 0!important;
+}
+.deal_detail_left ul li.date{
+    position: relative;
+    z-index: 1;
+}
+
+.deal_detail_left ul li.date i.calender{
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+.deal_detail_left ul li:last-child i.chevron_right{
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    z-index: 0;
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+
+
+.deal_detail_right {
+    position: relative;
+}
+.deal_detail_right input{
+    width: 270px!important;
+    border: 1px solid #546376!important;
+    padding: 0px 15px!important;
+    border-radius: 30px!important;
+    height:42px!important;
+}
+.deal_detail_right input::placeholder{
+   color: #A6ACBE;
+   font-size:17px;
+}
+.deal_detail_left ul li select:focus,
+.deal_detail_right input:focus{
+    box-shadow: none!important;
+    outline: 0 !important;
+}
+.deal_detail_right i{
+    position: absolute;
+    color: #133159;
+    font-size: 25px;
+    top: 10px;
+    right: 17px;
+}
+::-webkit-datetime-edit-fields-wrapper {
+    display:none;
+    width: 0 !important;;
+  }
+  ::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    /* z-index: 999; */
+  }
+  /* .deal_detail_left ul li.date::after {
+    content: ">";
+    transform: rotate(90deg);
+    font-size: 30px;
+    position: absolute;
+    right: 23px;
+    z-index: -5;
+  } */
+/*Deal Detail End*/
+
+
+
+/*Main Content*/
