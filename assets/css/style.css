@@ -12,7 +12,6 @@ body{
     position: relative;
     min-height:100vh;
     width: 100%;
-    overflow: hidden;
     background:#E5E8EF;
 }
 .sidebar{
@@ -134,6 +133,7 @@ body{
     left: 78px;
 }
 
+
 /*Side Nav End*/
 
 
@@ -254,9 +254,8 @@ body{
 
 /*Main Content*/
 .main_content{
-    margin: 35px 30px;
-    min-width: 1602px;    ;
-    height: 100%;
+    margin: 28px 25px;
+    min-width: calc(100% - 1602px);  
     background:#fff;
     border-radius:12px;
     padding: 20px;
@@ -406,9 +405,6 @@ select{
     transform: rotate(90deg);
     font-size: 30px;
 }
-
-
-
 .deal_detail_right {
     position: relative;
 }
@@ -441,18 +437,194 @@ select{
   }
   ::-webkit-calendar-picker-indicator {
     opacity: 0;
-    /* z-index: 999; */
   }
-  /* .deal_detail_left ul li.date::after {
-    content: ">";
-    transform: rotate(90deg);
-    font-size: 30px;
-    position: absolute;
-    right: 23px;
-    z-index: -5;
-  } */
 /*Deal Detail End*/
+.deal_value{
+    padding:15px 0px;
+}
+.deal_value h1{
+    font-weight: 400;
+    line-height: 24px;    
+    color: #333333;
+    font-size: 16px;
+    margin: 0 !important;
+}
 
+/*Dealer Detail Start*/
+.dealer_detail{
+    background: #F6F7FB;
+    padding:15px;
+    border-radius: 10px;
+}
+.dealer_detail >.row{
+    margin:0;
+}
+.dealer-summery{
+    background:#3c7ef31a;
+    border-radius:10px;
+    padding: 12px 8px;
+    margin-bottom: 15px;
+}
+.dealer-summery > .row {
+    margin-bottom: 0!important;
+}
+.ds_single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+.ds_name h5
+{
+    margin: 0!important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.ds_name .ds_num,
+.ds_name .ds_price
+{    margin: 0!important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: inline-block;
+}
+.ds_name .ds_num
+{    color: #8896A8;
+    padding-right: 20px;
+}
+.ds_name .ds_num::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #8896A8;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.ds_name .ds_price{
+    color:#133159;
+}
+.ds_single .ds_icon i{
+    background: #3C7EF3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    color: #fff;
+}
+/*Dealer Detail End*/
 
+/*Dealer Info Summery Start*/
+.dealer_info_summery{
+    background-color: #f0f2f7;
+    padding: 8px;
+    border: 1px solid #f0f2f7;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.dealer_info{
+    padding: 14px;
+    background:#fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.dealer_info:last-child{
+    margin-bottom: 0px;
+}
+.dealer_info h6{
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0;
+}
+.dealer_info h6 span{
+    font-size: 16px;
+    line-height: 22px;
+    color: #3C7EF3;
+}
+.dealer_info p{
+    font-size: 16px;
+    line-height: 24px;
+    color:  #8896A8;
+    margin:5px 0px
+}
+.d_contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.social_icons ul li{
+    margin-right: 4px;
+}
+.social_icons ul li a{
+    color: #546376;
+    font-size:18px;
+    display:inline-block;
+    width:30px;
+    height: 30px;
+    border-radius:50%;
+    border:1px solid #546376;
+    text-align: center;
+}
+.social_icons ul li a i{
+    font-size: 16px;
+    margin-top: 6px;
+}
+.dealer_info_summery >.row{
+    margin-bottom: 0!important;
+}
+.d_contact-info .more_icon{
+    width:30px;
+    height: 30px;
+    border-radius:50%;
+    color: #fff;
+    background-color:#133159;
+    text-align: center;
+}
+.d_contact-info .more_icon i{
+   margin-top: 3px;
+}
+/*Dealer Info Summery End*/
+.deal_btn > .row{
+    margin-bottom: 0;
+}
+.delete_btn a,
+.won_btn a,
+.lost_btn a,
+.pipeline_btn a{
+    width:100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+.delete_btn a{
+    color: #FF5858;
+    border:1px solid #FF5858;
+}
+.won_btn a{
+    color: #6FCF97;
+    border:1px solid #6FCF97;
+}
+.lost_btn a{
+    color: #FF5858;
+    border:1px solid #FF5858;
+}
+.pipeline_btn a{
+    color: #FFB053;
+    border:1px solid #FFB053;
+}
+.delete_btn a i.left,
+.won_btn a i.left,
+.lost_btn a i.left{
+    margin-right: 6px!important;
+}
 
 /*Main Content*/
