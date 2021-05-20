@@ -95,7 +95,7 @@
         padding:8px 14px;
     }
      .sidebar ul li{
-        max-width:150px;
+        height:40px;
     }
     .home_content{
         width: calc(100% - 225px)!important;
@@ -132,7 +132,7 @@
         margin-bottom: 10px;
     }
     .social_icons ul{
-        padding-right: 45px;
+        max-width: 150px;
     } 
     .social_icons ul li{
         margin-right: 5px;
