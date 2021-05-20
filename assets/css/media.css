@@ -92,6 +92,7 @@
 @media (min-width:1200px) and (max-width:1399px) {
      .sidebar{
         width: 225px;
+        padding:8px 6px;
     }
     .home_content{
         width: calc(100% - 225px)!important;
