@@ -94,6 +94,9 @@
         width: 225px;
         padding:8px 6px;
     }
+     .sidebar ul li{
+        height:45px;
+    }
     .home_content{
         width: calc(100% - 225px)!important;
         left: 225px;
