@@ -101,6 +101,9 @@
         width: calc(100% - 225px)!important;
         left: 225px;
     }
+    .add_dealer_info{
+        min-height:590px;
+    }
     .nav_content ul li.search {
         margin-right: 45px!important;
     }
