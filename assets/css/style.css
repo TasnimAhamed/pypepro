@@ -88,9 +88,7 @@ body{
 
 }
 .sidebar.active ul li a{
-
     border-radius: 50%;
-
 }
 .sidebar.active .link_name{
     transition:all 0.5s ease;
@@ -346,8 +344,7 @@ body{
     color: #546376;
     border:1px solid #546376;
     border-radius: 50%;
-    padding:15px;
-    font-size: 15px;
+    padding:14px;
 }
 
 /*Deal Content End*/
@@ -562,31 +559,30 @@ select{
 }
 .social_icons ul li a{
     color: #546376;
-    font-size:18px;
     display:inline-block;
-    width:30px;
-    height: 30px;
+    width:25px;
+    height: 25px;
     border-radius:50%;
     border:1px solid #546376;
     text-align: center;
 }
 .social_icons ul li a i{
-    font-size: 16px;
-    margin-top: 6px;
+    font-size: 14px;
+    margin-top: 5px;
 }
 .dealer_info_summery >.row{
     margin-bottom: 0!important;
 }
 .d_contact-info .more_icon{
-    width:30px;
-    height: 30px;
+    width:25px;
+    height: 25px;
     border-radius:50%;
     color: #fff;
     background-color:#133159;
     text-align: center;
 }
 .d_contact-info .more_icon i{
-   margin-top: 3px;
+   margin-left: 1px;
 }
 /*Dealer Info Summery End*/
 .deal_btn > .row{
