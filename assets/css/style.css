@@ -551,6 +551,35 @@ select{
     color:  #8896A8;
     margin:5px 0px
 }
+.add_dealer_info{
+    background:#fff;
+    min-height:478px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:10px;
+}
+.add_dealer_info h6{
+    color: #8896A8;
+    margin:0 0 15px 0;
+}
+.add_dealer_info a{
+    display: flex;
+    align-items: center;
+    color: #546376;
+    font-size:16px;
+}
+.add_dealer_info a i{
+    background: #3C7EF3;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+    color: #fff;
+    margin-right: 6px;
+}
 .d_contact-info{
     display: flex;
     justify-content: space-between;
